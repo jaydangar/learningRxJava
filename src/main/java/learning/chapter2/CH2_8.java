@@ -15,7 +15,7 @@ public class CH2_8 {
 
         single.subscribe(s -> System.out.println(s));
 
-        single.subscribe(new SingleObserver() {
+        single.subscribe(new SingleObserver<Integer>() {
             @Override
             public void onError(@NonNull Throwable arg0) {
                 // TODO Auto-generated method stub
@@ -29,7 +29,7 @@ public class CH2_8 {
             }
 
             @Override
-            public void onSuccess(@NonNull Object arg0) {
+            public void onSuccess(@NonNull Integer arg0) {
                 // TODO Auto-generated method stub
                 System.out.println(arg0);
             }
