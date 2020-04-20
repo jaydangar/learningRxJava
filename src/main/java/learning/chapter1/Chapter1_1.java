@@ -31,6 +31,7 @@ class ObserverImplementationClass implements Observer<String>{
     public void onSubscribe(@NonNull Disposable arg0) {
         // TODO Auto-generated method stub
         System.out.println("is disposed? " + arg0.isDisposed());
+        
     }
 
 }
